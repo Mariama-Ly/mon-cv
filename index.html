@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Mariama LY</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#accueil" class="nav-logo">ML</a>
+            <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#experiences">Expériences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Basculer le thème">
+            <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+
+    <!-- ========== HEADER ========== -->
+        <header id="accueil">
+            <div class="header-content">
+                <div class="header-photo">
+                    <img src="image/image.jpg" alt="Photo de profil de Mariama LY" />
+            </div>
+            <div class="header-info">
+                <p class="header-eyebrow">Étudiant en Licence 2 Informatique</p>
+          <h1>Mariama LY</h1>
+          <p class="header-titre">Développeur Web &amp; Passionné d'Intelligence Artificielle</p>
+          <ul class="header-coords">
+            <li><i class="fas fa-envelope"></i> lymariama21@gmail.com</li>
+            <li><i class="fas fa-phone"></i> +221 77 686 39 29</li>
+            <li><i class="fas fa-map-marker-alt"></i> Dakar, Sénégal</li>
+          </ul>
+          <div class="header-actions">
+            <a href="#contact" class="btn-primary">Me contacter</a>
+            <a href="#projets" class="btn-secondary">Voir mes projets</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== À PROPOS ========== -->
+    <section id="apropos">
+      <div class="container">
+        <h2 class="section-title">PROFIL</h2>
+        <div class="apropos-content">
+          <p>
+            Étudiant en deuxième année de Licence Informatique à l'Université Iba Der Thiam de Thiès,
+            je suis passionné par le développement web, les algorithmes et l'intelligence artificielle.
+            Rigoureux, curieux et motivé, je cherche à acquérir une expérience pratique qui me permettra
+            de contribuer à des projets innovants. Je m'engage à produire un code propre, bien structuré
+            et documenté, tout en accordant une importance particulière à l'expérience utilisateur.
+          </p>
+          <ul class="apropos-stats">
+            <li>
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Projets réalisés</span>
+            </li>
+            <li>
+              <span class="stat-number">2</span>
+              <span class="stat-label">Années d'études</span>
+            </li>
+            <li>
+              <span class="stat-number">4</span>
+              <span class="stat-label">Langues maîtrisées</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FORMATION ========== -->
+    <section id="formation">
+      <div class="container">
+        <h2 class="section-title">Formation</h2>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-date">2026 – En cours</div>
+            <div class="timeline-body">
+              <h3>Licence 2 Informatique</h3>
+              <p class="timeline-lieu">Université Iba Der Thiam de Thiès</p>
+              <p>Algorithmique avancée, Bases de données, Développement web, Réseaux, POO avec Java.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">2024 – 2025</div>
+            <div class="timeline-body">
+              <h3>Licence 1 Informatique</h3>
+              <p class="timeline-lieu">Université Iba Der Thiam de Thiès</p>
+              <p>Fondamentaux de la programmation (C), Mathématiques, Physiques, Architecture des ordinateurs.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">2022 – 2023</div>
+            <div class="timeline-body">
+              <h3>Baccalauréat Série S2</h3>
+              <p class="timeline-lieu">Ecol Privée Serigne Sohibou MBACKé, Diourbel</p>
+              <p>Spécialité Mathématiques et Sciences Physiques.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== COMPÉTENCES ========== -->
+    <section id="competences">
+      <div class="container">
+        <h2 class="section-title">Compétences</h2>
+        <div class="competences-grid">
+          <div class="competences-col">
+            <h3>Compétences techniques</h3>
+            <ul class="skills-list">
+              <li class="skill-item">
+                <div class="skill-header">
+                  <span>HTML / CSS</span><span>85%</span>
+                </div>
+                <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-fill" data-width="85"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-header">
+                  <span>JavaScript</span><span>70%</span>
+                </div>
+                <div class="skill-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-fill" data-width="70"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-header">
+                  <span>Python</span><span>65%</span>
+                </div>
+                <div class="skill-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-fill" data-width="65"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-header">
+                  <span>Java</span><span>60%</span>
+                </div>
+                <div class="skill-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-fill" data-width="60"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-header">
+                  <span>SQL / MySQL</span><span>75%</span>
+                </div>
+                <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-fill" data-width="75"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-header">
+                  <span>Git / GitHub</span><span>70%</span>
+                </div>
+                <div class="skill-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-fill" data-width="70"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="competences-col">
+            <h3>Compétences transversales</h3>
+            <ul class="soft-skills">
+              <li><i class="fas fa-check-circle"></i> Travail en équipe</li>
+              <li><i class="fas fa-check-circle"></i> Résolution de problèmes</li>
+              <li><i class="fas fa-check-circle"></i> Gestion du temps</li>
+              <li><i class="fas fa-check-circle"></i> Communication</li>
+              <li><i class="fas fa-check-circle"></i> Autonomie &amp; Rigueur</li>
+              <li><i class="fas fa-check-circle"></i> Veille technologique</li>
+              <li><i class="fas fa-check-circle"></i> Adaptabilité</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPÉRIENCES ========== -->
+    <section id="experiences">
+      <div class="container">
+        <h2 class="section-title">Expériences</h2>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-date">2024-2025</div>
+            <div class="timeline-body">
+              <h3>CREATION DE SITES WEB</h3>
+              <p class="timeline-lieu">Freelance</p>
+              <p>Conception et développement de sites web vitrines et interactifs. <br>
+                Utilisation des langages HTML5, CSS3 et JavaScript pour le frontend. <br>
+                Optimisation de l’affichage pour mobile (Responsive Design).</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">2025 – 2026</div>
+            <div class="timeline-body">
+              <h3>DÉVELOPPEUSE JAVA – PROJETS ACADÉMIQUES L2</h3>
+              <p>Développement d'applications en Programmation Orientée Objet
+(POO). <br>
+Gestion de structures de données et résolution d'algorithmes
+complexes. <br>
+Utilisation d'environnements de développement comme IntelliJ ou eclipse.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== PROJETS ========== -->
+    <section id="projets">
+      <div class="container">
+        <h2 class="section-title">Projets réalisés</h2>
+        <div class="projets-grid">
+          <article class="projet-card">
+            <div class="projet-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>Système de Gestion Scolaire</h3>
+            <p>Application web de gestion des notes et absences. CRUD complet avec PHP, MySQL et interface responsive.</p>
+            <ul class="projet-tags">
+              <li>PHP</li><li>MySQL</li><li>HTML/CSS</li>
+            </ul>
+          </article>
+          <article class="projet-card">
+            <div class="projet-icon"><i class="fas fa-calculator"></i></div>
+            <h3>Calculatrice Scientifique</h3>
+            <p>Calculatrice interactive en JavaScript pur, supportant les opérations de base, les fonctions trigonométriques et l'historique des calculs.</p>
+            <ul class="projet-tags">
+              <li>JavaScript</li><li>HTML5</li><li>CSS3</li>
+            </ul>
+          </article>
+          <article class="projet-card">
+            <div class="projet-icon"><i class="fas fa-database"></i></div>
+            <h3>Base de Données Bibliothèque</h3>
+            <p>Modélisation et implémentation d'une base de données relationnelle pour une bibliothèque universitaire.</p>
+            <ul class="projet-tags">
+              <li>MySQL</li><li>SQL</li><li>Merise</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LANGUES & INTÉRÊTS ========== -->
+    <section id="langues-interets">
+      <div class="container">
+        <div class="deux-cols">
+          <div>
+            <h2 class="section-title">Langues</h2>
+            <ul class="langues-list">
+              <li>
+                <span class="langue-nom">Wolof</span>
+                <span class="langue-niveau natif">Langue maternelle</span>
+              </li>
+              <li>
+                <span class="langue-nom">Français</span>
+                <span class="langue-niveau courant">Courant (C1)</span>
+              </li>
+              <li>
+                <span class="langue-nom">Anglais</span>
+                <span class="langue-niveau intermediaire">Intermédiaire (B1)</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="section-title">Centres d'intérêt</h2>
+            <ul class="interets-list">
+              <li><i class="fas fa-code"></i> Programmation &amp; Open Source</li>
+              <li><i class="fas fa-robot"></i> Intelligence Artificielle</li>
+              <li><i class="fas fa-book"></i> Lecture (tech, développement personnel)</li>
+              <li><i class="fas fa-film"></i> Cinéma scientifique</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <p>N'hésitez pas à me contacter pour toute opportunité de stage, collaboration ou simplement pour échanger.</p>
+            <ul class="contact-details">
+              <li><i class="fas fa-envelope"></i> lymariama21@gmail.com</li>
+              <li><i class="fas fa-phone"></i> +221 77 686 39 29</li>
+              <li><i class="fas fa-map-marker-alt"></i> Dakar, Sénégal</li>
+            </ul>
+          </div>
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="nom">Nom complet</label>
+              <input type="text" id="nom" name="nom" placeholder="Votre nom" />
+              <span class="form-error" id="nom-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse e-mail</label>
+              <input type="email" id="email" name="email" placeholder="votre@email.com" />
+              <span class="form-error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Votre message..."></textarea>
+              <span class="form-error" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn-primary">
+              <i class="fas fa-paper-plane"></i> Envoyer le message
+            </button>
+            <p class="form-success" id="form-success"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2026 Mariama LY – Tous droits réservés.</p>
+        <ul class="footer-social">
+          <li>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:lymariama21@gmail.com" aria-label="E-mail">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bouton retour en haut -->
+  <button class="back-to-top" id="back-to-top" aria-label="Retour en haut">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+</body>
+</html>
