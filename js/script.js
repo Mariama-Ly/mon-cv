@@ -102,30 +102,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* 6. QR CODE */
-  var conteneurQR = document.getElementById('qr-footer');
-  if (conteneurQR && typeof QRCode !== 'undefined') {
-    new QRCode(conteneurQR, {
-      text: 'https://Mariama-Ly.github.io/mon-cv/',
-      width: 120,
-      height: 120,
-      colorDark: '#8B5A7A',
-      colorLight: '#F7F0F4',
-      correctLevel: QRCode.CorrectLevel.H
-    });
-  }
-
 });
-
-  var btnTelecharger = document.getElementById('btn-telecharger-qr');
-  if (btnTelecharger) {
-    btnTelecharger.addEventListener('click', function () {
-      var canvas = conteneurQR.querySelector('canvas');
-      if (canvas) {
-        var lien = document.createElement('a');
-        lien.download = 'qr-cv-mariama-ly.png';
-        lien.href = canvas.toDataURL('image/png');
-        lien.click();
-      }
-    });
-  }
