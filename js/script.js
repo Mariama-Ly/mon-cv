@@ -116,3 +116,16 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 });
+
+  var btnTelecharger = document.getElementById('btn-telecharger-qr');
+  if (btnTelecharger) {
+    btnTelecharger.addEventListener('click', function () {
+      var canvas = conteneurQR.querySelector('canvas');
+      if (canvas) {
+        var lien = document.createElement('a');
+        lien.download = 'qr-cv-mariama-ly.png';
+        lien.href = canvas.toDataURL('image/png');
+        lien.click();
+      }
+    });
+  }
