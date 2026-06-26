@@ -233,19 +233,16 @@ boutonHaut.addEventListener('click', function () {
 });
 
 
-
 var urlCV = 'https://Mariama-Ly.github.io/mon-cv/';
 
 var conteneurQR = document.getElementById('qr-footer');
 if (conteneurQR) {
-  var imgQR = document.createElement('img');
-  imgQR.src = 'https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=' + encodeURIComponent(urlCV) + '&margin=10';
-  imgQR.alt = 'QR Code CV Mariama Ly';
-  imgQR.width = 120;
-  imgQR.height = 120;
-  imgQR.onerror = function() {
-    /* Si l'API échoue, afficher l'URL en texte */
-    conteneurQR.innerHTML = '<p style="color:white;font-size:0.75rem;word-break:break-all;">' + urlCV + '</p>';
-  };
-  conteneurQR.appendChild(imgQR);
+  new QRCode(conteneurQR, {
+    text: urlCV,
+    width: 120,
+    height: 120,
+    colorDark: '#8B5A7A',
+    colorLight: '#F7F0F4',
+    correctLevel: QRCode.CorrectLevel.H
+  });
 }
