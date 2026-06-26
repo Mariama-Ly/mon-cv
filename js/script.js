@@ -233,30 +233,19 @@ boutonHaut.addEventListener('click', function () {
 });
 
 
-function genererUrlQR(texte, taille) {
-  var t = taille || 150;
-  return 'https://api.qrserver.com/v1/create-qr-code/?size=' + t + 'x' + t + '&data=' + encodeURIComponent(texte) + '&color=8B5A7A&bgcolor=F7F0F4&margin=10';
-}
 
 var urlCV = 'https://Mariama-Ly.github.io/mon-cv/';
 
 var conteneurQR = document.getElementById('qr-footer');
 if (conteneurQR) {
   var imgQR = document.createElement('img');
-  imgQR.src = genererUrlQR(urlCV, 120);
-  imgQR.alt = 'QR Code – CV Mariama Ly';
+  imgQR.src = 'https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=' + encodeURIComponent(urlCV) + '&margin=10';
+  imgQR.alt = 'QR Code CV Mariama Ly';
   imgQR.width = 120;
   imgQR.height = 120;
+  imgQR.onerror = function() {
+    /* Si l'API échoue, afficher l'URL en texte */
+    conteneurQR.innerHTML = '<p style="color:white;font-size:0.75rem;word-break:break-all;">' + urlCV + '</p>';
+  };
   conteneurQR.appendChild(imgQR);
-}
-
-var btnTelecharger = document.getElementById('btn-telecharger-qr');
-if (btnTelecharger) {
-  btnTelecharger.addEventListener('click', function () {
-    var lien = document.createElement('a');
-    lien.href = genererUrlQR(urlCV, 300);
-    lien.download = 'qr-cv-mariama-ly.png';
-    lien.target = '_blank';
-    lien.click();
-  });
 }
